@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.body-center {
+  height: 100vh;
+  background: linear-gradient(135deg, #00245a, #00317A);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Container utama */
+.kotak-utama {
+  text-align: center;
+  max-width: 500px;
+  padding: 40px 30px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+/* Judul */
+.judul {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* Deskripsi */
+.deskripsi {
+  font-size: 14px;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Grup tombol */
+.grup-tombol {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Tombol umum */
+.tombol {
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Tombol utama */
+.tombol-utama {
+  background: white;
+  color: #00317A;
+}
+
+.tombol-utama:hover {
+  background: #e6e6e6;
+  transform: translateY(-2px);
+}
+
+/* Tombol outline */
+.tombol-outline {
+  border: 1px solid rgba(255,255,255,0.6);
+  color: white;
+}
+
+.tombol-outline:hover {
+  background: white;
+  color: #00317A;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .kotak-utama {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .judul {
+    font-size: 22px;
+  }
+}
+
+
+.kotak-login {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.judul-login {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.sub-login {
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 25px;
+}
+
+/* Form */
+.form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input */
+.input-grup {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.input-grup input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.ikon {
+  width: 18px;
+  margin-right: 10px;
+  opacity: 0.6;
+}
+
+.full {
+  width: 100%;
+  text-align: center;
+}
+
+.link-login {
+  display: block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+.link-login:hover {
+  text-decoration: underline;
+}
+/* ===== DASHBOARD ===== */
+body {
+    background: linear-gradient(135deg, #00245a, #00317A);
+    color: white;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.logo-header {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    height: fit-content;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    transform: translateX(5px);
+    opacity: 0.8;
+}
+
+/* Content */
+.konten {
+    flex: 1;
+    margin-bottom: 12px;
+}
+
+/* Card umum */
+.card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 12px;
+}
+
+/* Statistik */
+.statistik {
+    margin-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.box-stat {
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.08);
+}
+
+.box-stat h1 {
+    font-size: 24px;
+}
+
+/* Status */
+.status {
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    color: white;
+}
+
+.selesai { background: #22c55e; }
+.proses { background: #3b82f6; }
+.menunggu { background: #facc15; color: black; }
+.default { background: gray; }
+
+/* Aspirasi card */
+.aspirasi {
+    margin-bottom: 20px;
+}
+
+.judul-card {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Feedback */
+.feedback {
+    background: rgba(255,255,255,0.08);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
+/* ===== TABLE ===== */
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.tabel {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.tabel thead {
+  background: rgba(255,255,255,0.1);
+}
+
+.tabel th,
+.tabel td {
+  padding: 40px;
+  text-align: left;
+}
+
+.tabel th {
+  font-weight: 600;
+}
+
+.tabel tbody tr {
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.tabel tbody tr:hover {
+  background: rgba(255,255,255,0.05);
+}
+/* ===== INPUT & SELECT ===== */
+.input-text,
+.input-select {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 12px;
+}
+
+.btn-aksi {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 2px;
+  transition: 0.3s;
+}
+
+.btn-aksi.biru {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-aksi.biru:hover {
+  background: #2563eb;
+}
+
+.btn-aksi.merah {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-aksi.merah:hover {
+  background: #dc2626;
+}
+
+.tabel td {
+  vertical-align: middle;
+}
+/* ===== FILTER ===== */
+.form-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.form-filter input,
+.form-filter select {
+  min-width: 150px;
+}
